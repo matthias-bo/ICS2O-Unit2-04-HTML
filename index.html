@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title>My javascript webpage</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Javascript webpage">
+    <meta name="keywords" content="javascript">
+    <meta name="author" content="Matthias Bo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esketit.css">
+    </head>
+    <body>
+    <h1>Welcome to my amazing webpage</h1>
+    <p><i>Type anything here for it to pop up!</i></p>
+    <input type="text" id="textbox">
+    <button onclick="textalert()">Send alert</button>
+    <script>
+    document.ElementById("textbox").addEventListener("click", textalert);
+    function textalert() {
+    alert(document.getElementById("textbox").value);
+    }
+  </script>
+    </body>
+  </html>
